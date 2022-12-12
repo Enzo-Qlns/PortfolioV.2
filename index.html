@@ -6,14 +6,11 @@
     <meta charSet="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="Enzo" />
-    <meta name="description"
-        content="Personal Portfolio" />
+    <meta name="description" content="Personal Portfolio" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://enzo.quelenis.com" />
-    <meta property="og:description"
-        content="Personal Portfolio" />
+    <meta property="og:description" content="Personal Portfolio" />
     <meta property="theme-color" content="#d6cdf9" />
-    <meta name="next-head-count" content="20" />
 
     <!-- ICON -->
     <link rel="icon" href="./assets/static/images/icon.png" />
@@ -27,18 +24,17 @@
     </style>
 
     <!-- STYLE -->
-    <link rel="preload" href="./assets/static/css/69e0e60824bcaea6.css" as="style" />
     <link rel="stylesheet" href="./assets/static/css/69e0e60824bcaea6.css" data-n-g="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/static/css/font.css">
     <link rel="stylesheet" href="./assets/static/css/stylebg.css">
 
     <!-- SCRIPT -->
     <script defer="" nomodule="" src="./assets/static/chunks/polyfills-5cd94c89d3acac5f.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="./assets/static/chunks/pages/script.js"></script>
 
     <!-- TITLE -->
     <title>Home | enzo.</title>
@@ -49,7 +45,7 @@
     <div id="__next" data-reactroot="">
 
         <!-- BLOC 1 -->
-        
+
         <div>
             <div class="flex items-center justify-center sticky p-5 top-0 backdrop-blur-lg">
                 <div class="flex md:w-7/12 w-10/12 justify-between">
@@ -102,7 +98,8 @@
                             <a href="./assets/static/files/CV.pdf" target="_blank"
                                 class="px-8 p-3 rounded-full hover:bg-[#292929] transition bg-[#1f1f1f]">Mon CV</a>
 
-                            <a href="." target="_blank" class="ml-2 flex items-center hover:opacity-70 transition">
+                            <a href="https://github.com/Enzo-Qlns" target="_blank"
+                                class="ml-2 flex items-center hover:opacity-70 transition">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 256 254"
                                     preserveAspectRatio="xMidYMid">
                                     <g>
@@ -143,6 +140,8 @@
 
                     <div class="md:flex md:w-7/12 w-10/12 justify-between items-center ">
 
+                        <a onclick="off()" id="mark"><i class="fa-regular fa-circle-xmark"></i></a>
+
                         <div class="md:w-2/3 text-gray-200" id="blockAbout">
 
                             <p class="text-3xl font-semibold">About Me</p>
@@ -157,15 +156,19 @@
                                         enzo@quelenis.com</a></span>
                             </div>
                             <div class="mt-5 row">
-                                <span><strong>Place : </strong><a onclick="on()"
-                                        target="_blank">
+                                <span><strong>Place : </strong><a onclick="on()" target="_blank">
                                         Reims</a></span>
                             </div>
 
                         </div>
 
-                        <i class="fa fa-times-circle-o" aria-hidden="true"></i>
-                        <iframe id="iframe_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83334.45352434482!2d3.9727076346338603!3d49.253623299126325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e974334a533b09%3A0x40a5fb99a3b45c0!2s51100%20Reims!5e0!3m2!1sfr!2sfr!4v1670368011593!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div id="spinner"></div>
+
+
+                        <iframe id="iframe_map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83334.45352434482!2d3.9727076346338603!3d49.253623299126325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e974334a533b09%3A0x40a5fb99a3b45c0!2s51100%20Reims!5e0!3m2!1sfr!2sfr!4v1670368011593!5m2!1sfr!2sfr"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
 
                         <div
                             class="justify-center md:w-1/2 flex grid grid-cols-2 gap-4 text-gray-200 font-medium md:mt-0 mt-5">

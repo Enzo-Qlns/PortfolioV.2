@@ -1,8 +1,6 @@
 const ifram = document.getElementById('iframe_map');
 const blockAbout = document.getElementById('blockAbout');
-
-ifram.style.display = 'none';
-ifram.style.filter = 'contrast(129%) brightness(103%) saturate(106%) sepia(7%) grayscale(100%) invert(100%)';
+const mark = document.getElementById('mark');
 
 function on() {
     ifram.style.display = 'block';
@@ -10,11 +8,12 @@ function on() {
     ifram.style.height = '50vh';
     ifram.style.position = 'relative';
     ifram.style.right = '8rem'
-    ifram.style.transition = 'transition: width 1s 0s ease-in;';
     blockAbout.style.display = 'none';
+    mark.style.display = 'block';
 }
 
 function off() {
     ifram.style.display = 'none';
     blockAbout.style.display = 'block';
+    mark.style.display = 'none';
 }
