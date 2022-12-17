@@ -35,6 +35,7 @@
     <!-- SCRIPT -->
     <script defer="" nomodule="" src="./assets/static/chunks/polyfills-5cd94c89d3acac5f.js"></script>
     <script src="./assets/static/chunks/pages/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
 
     <!-- TITLE -->
     <title>Home | enzo.</title>
@@ -61,7 +62,7 @@
 
             <div>
 
-                <div class="night">
+                <div class="night" id="night">
                     <div class="shooting_star"></div>
                     <div class="shooting_star"></div>
                     <div class="shooting_star"></div>
@@ -138,9 +139,7 @@
 
                 <div class="flex justify-center items-center w-screen mt-20 bg-[#1f1f1f] py-20">
 
-                    <div class="md:flex md:w-7/12 w-10/12 justify-between items-center ">
-
-                        <a onclick="off()" id="mark"><i class="fa-regular fa-circle-xmark"></i></a>
+                    <div class="md:flex md:w-7/12 w-10/12 justify-between items-center mapSkills ">
 
                         <div class="md:w-2/3 text-gray-200" id="blockAbout">
 
@@ -156,8 +155,9 @@
                                         enzo@quelenis.com</a></span>
                             </div>
                             <div class="mt-5 row">
-                                <span><strong>Place : </strong><a onclick="on()" target="_blank">
-                                        Reims</a></span>
+                                <span>
+                                    <strong>Place : </strong><a id="place" target="_blank">Reims</a>
+                                </span>
                             </div>
 
                         </div>
@@ -170,14 +170,14 @@
                             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
 
-                        <div
-                            class="justify-center md:w-1/2 flex grid grid-cols-2 gap-4 text-gray-200 font-medium md:mt-0 mt-5">
+                        <div class="justify-center md:w-1/2 flex grid grid-cols-2 gap-4 text-gray-200 font-medium md:mt-0 mt-5"
+                            id="skills">
 
                             <div class="flex justify-center">
 
                                 <div class="w-full">
 
-                                    <div class="p-4 rounded-xl bg-[#252525]">
+                                    <div class="p-4 rounded-xl bg-[#252525]" id="individualSkills">
 
                                         <div class="w-1/2 rounded-xl bg-green-500 p-4 bg-opacity-20">
 
@@ -241,7 +241,7 @@
 
                                 <div class="w-full">
 
-                                    <div class="p-4 rounded-xl bg-[#252525]">
+                                    <div class="p-4 rounded-xl bg-[#252525]" id="individualSkills">
 
                                         <div class="w-1/2 rounded-xl bg-blue-500 p-4 bg-opacity-20">
 
@@ -302,7 +302,7 @@
 
                                 <div class="w-full">
 
-                                    <div class="p-4 rounded-xl bg-[#252525]">
+                                    <div class="p-4 rounded-xl bg-[#252525]" id="individualSkills">
 
                                         <div class="w-1/2 rounded-xl bg-blue-400 p-4 bg-opacity-20">
                                             <svg xmlns="http://www.w3.org/2000/svg" aria-label="Adobe" role="img"
@@ -342,7 +342,7 @@
 
                                 <div class="w-full">
 
-                                    <div class="p-4 rounded-xl bg-[#252525]">
+                                    <div class="p-4 rounded-xl bg-[#252525]" id="individualSkills">
 
                                         <div class="w-1/2 rounded-xl bg-green-500 p-4 bg-opacity-20">
 

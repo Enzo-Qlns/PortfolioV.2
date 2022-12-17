@@ -13,4 +13,3 @@ function isMobileDevice() {
         return false;
     }
 }
-
