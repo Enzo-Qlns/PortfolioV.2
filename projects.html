@@ -6,40 +6,45 @@
     <meta charSet="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="Enzo" />
-    <meta name="description"
-        content="Grand passionné d&#x27;informatique depuis mon plus jeune âge, je suis étudiant à l&#x27;école ESGI à Reims pour une première année en Bachelor informatique en alternance à la PUM Plastiques." />
+    <meta name="description" content="Personal Portfolio" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://enzo.quelenis.com" />
-    <meta property="og:description"
-        content="Grand passionné d&#x27;informatique depuis mon plus jeune âge, je suis étudiant à l&#x27;école ESGI à Reims pour une première année en Bachelor informatique en alternance à la PUM Plastiques." />
+    <meta property="og:description" content="Personal Portfolio" />
     <meta property="theme-color" content="#d6cdf9" />
-    <meta name="next-head-count" content="20" />
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#d8cefd">
 
     <!-- ICON -->
-    <link rel="icon" href="./assets/static/images/icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/static/favicon_package/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/static/favicon_package/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/static/favicon_package/favicon-16x16.png">
+    <link rel="manifest" href="./assets/static/favicon_package/site.webmanifest">
+    <link rel="mask-icon" href="./assets/static/favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="./assets/static/css/font.css">
     <style
         data-href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
     </style>
 
     <!-- STYLE -->
-    <link rel="preload" href="./assets/static/css/69e0e60824bcaea6.css" as="style" />
     <link rel="stylesheet" href="./assets/static/css/69e0e60824bcaea6.css" data-n-g="" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/static/css/font.css">
+    <link rel="stylesheet" href="./assets/static/css/stylebg.css">
 
     <!-- SCRIPT -->
-    <script defer="" nomodule="" src="./assets/static/chunks/polyfills-5cd94c89d3acac5f.js"></script>
-    <script src="./assets/static/chunks/pages/script.js"></script>
+    <script src="./assets/static/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.js"
+        integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
 
     <!-- TITLE -->
-    <title>Projects | enzo.</title>
+    <title>Projets | enzo.</title>
 </head>
 
 <body>
@@ -47,9 +52,10 @@
         <div>
             <div class="flex items-center justify-center sticky p-5 top-0 backdrop-blur-lg">
                 <div class="flex md:w-7/12 w-10/12 justify-between">
-                    <div class="flex items-center"><a class="text-2xl font-bold text-gray-200" href="/index.html">enzo</a>
+                    <div class="flex items-center"><a class="text-2xl font-bold text-gray-200"
+                            href="/index.html">enzo</a>
                     </div>
-                    <div class="flex items-center text-gray-300"><a class="mr-3">Projects.</a><a
+                    <div class="flex items-center text-gray-300"><a class="mr-3">Projets.</a><a
                             href="mailto:contact@enzoquelenis.com" target="_blank"
                             class="px-5 p-2 transition rounded-full hover:bg-[#262626] bg-[#1f1f1f]">Contact</a></div>
                 </div>
@@ -136,7 +142,7 @@
                         <div
                             class="transition hover:border-[#242424] group hover:bg-[#1f1f1f] text-gray-200 md:flex border-2 border-[#1f1f1f] rounded-xl">
                             <div class="md:flex p-4">
-                                <img src="./projects/portfolio.png" class="rounded-xl md:w-1/4 port"
+                                <img src="./pages/projects/portfolio.png" class="rounded-xl md:w-1/4 port"
                                     alt="portfolio photo" />
                                 <div class="md:ml-4 ml-2 flex items-center">
                                     <div class="mt-2 md:mt-0">
@@ -166,7 +172,7 @@
                     <div class="py-2">
                         <div
                             class="transition hover:border-[#242424] group hover:bg-[#1f1f1f] text-gray-200 md:flex border-2 border-[#1f1f1f] rounded-xl">
-                            <div class="md:flex p-4"><img src="./projects/tic-tac-toe.png"
+                            <div class="md:flex p-4"><img src="./pages/projects/tic-tac-toe.png"
                                     class="rounded-xl md:w-1/4 tic" alt="tic tac toe photo" />
                                 <div class="md:ml-4 ml-2 flex items-center">
                                     <div class="mt-2 md:mt-0">
@@ -192,9 +198,8 @@
             </div>
         </div>
     </div>
-    
-    <script src="./assets/static/chunks/pages/projects-d142c068c3f8b898.js"></script>
-    <script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"./projects","query":{},"buildId":"UUFw8qDklicox75cc4U2s","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}
+
+    <script src="./assets/static/js/projects.js"></script>
     </script>
 
 </body>
