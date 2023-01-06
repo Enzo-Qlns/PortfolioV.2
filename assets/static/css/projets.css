@@ -1,0 +1,52 @@
+.py-2.card {
+    margin: 3vh;
+}
+
+.rounded-xl.md\:w-1\/4.tic {
+    filter: grayscale(1) invert(1);
+    width: 6rem;
+    margin: 0 auto;
+}
+
+.rounded-xl.md\:w-1\/4.port {
+    width: 10rem;
+    margin: auto;
+}
+
+.card {
+    background: #191c29;
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.card::before {
+    content: "";
+    width: 100.5%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    animation: spin 2.5s linear infinite;
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+
+    100% {
+        --rotate: 360deg;
+    }
+}

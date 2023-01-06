@@ -3,7 +3,6 @@ const blockAbout = document.getElementById("blockAbout");
 const skills = document.getElementById("skills");
 
 if (!isMobileDevice()) {
-  document.getElementById("night").style.left = "43vh";
   document.getElementById("place").style.cursor = "pointer";
   document.getElementById("place").setAttribute("onclick", "on()");
 }
