@@ -1,3 +1,23 @@
+/* OTHERS */
+.flex.items-center.justify-center.sticky.p-5.top-0.backdrop-blur-lg {
+    z-index: 999999;
+}
+
+.py-2.card {
+    margin: 3vh;
+}
+
+.rounded-xl.md\:w-1\/4.tic {
+    filter: grayscale(1) invert(1);
+    width: 6rem;
+    margin: 0 auto;
+}
+
+.rounded-xl.md\:w-1\/4.port {
+    width: 10rem;
+    margin: auto;
+}
+
 /* SIDENAV */
 #sidenav a {
     top: 40%;
@@ -24,22 +44,6 @@
 #aboutButton {
     top: 23px;
     background-color: #1a1c29;
-}
-
-/* OTHERS */
-.py-2.card {
-    margin: 3vh;
-}
-
-.rounded-xl.md\:w-1\/4.tic {
-    filter: grayscale(1) invert(1);
-    width: 6rem;
-    margin: 0 auto;
-}
-
-.rounded-xl.md\:w-1\/4.port {
-    width: 10rem;
-    margin: auto;
 }
 
 .card {
