@@ -1,6 +1,6 @@
 /* OTHERS */
 .flex.items-center.justify-center.sticky.p-5.top-0.backdrop-blur-lg {
-    z-index: 999999;
+    z-index: 2;
 }
 
 .py-2.card {
@@ -257,6 +257,7 @@ button:active {
     animation: fade-in 0.5s ease-out 0.25s both;
     right: 4%;
     top: 3%;
+    z-index: 3;
 }
 
 @-webkit-keyframes fade-in {
