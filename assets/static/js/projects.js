@@ -24,4 +24,6 @@ if (!isMobileDevice()){
         $(this).css('display', 'none')
         location.reload();
     })
+} else if (isMobileDevice()){
+    sidenav.style.display = 'none'
 }
