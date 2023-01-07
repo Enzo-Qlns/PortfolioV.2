@@ -1,22 +1,25 @@
 const ifram = document.getElementById("iframe_map");
 const blockAbout = document.getElementById("blockAbout");
 const skills = document.getElementById("skills");
+const mark = document.getElementById('mark');
+const place = document.getElementById("place");
 
 if (!isMobileDevice()) {
-  document.getElementById("place").style.cursor = "pointer";
-  document.getElementById("place").setAttribute("onclick", "on()");
-}
+  place.style.cursor = "pointer";
+  place.style.textDecoration = "underline darkgrey"
 
-const individualSkills = document.querySelectorAll("#individualSkills");
+  $(place).click(function () {
+    ifram.style.display = "block";
+    mark.style.display = "block";
+    blockAbout.style.display = "none";
+    skills.style.visibility = "hidden";
+  });
 
-$(ifram).mouseleave(function () {
-  $(this).css("display", "none");
-  blockAbout.style.display = "block";
-  skills.style.visibility = "visible";
-});
+  $(mark).click(function () {
+    ifram.style.display = "none"
+    mark.style.display = 'none'
+    blockAbout.style.display = "block";
+    skills.style.visibility = "visible";
+  });
 
-function on() {
-  ifram.style.display = "block";
-  blockAbout.style.display = "none";
-  skills.style.visibility = "hidden";
 }
