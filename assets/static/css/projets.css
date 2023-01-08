@@ -10,7 +10,8 @@
 .rounded-xl.md\:w-1\/4.tic {
     filter: grayscale(1) invert(1);
     width: 6rem;
-    margin: 0 auto;
+    margin: auto;
+    height: 6rem;
 }
 
 .rounded-xl.md\:w-1\/4.port {
