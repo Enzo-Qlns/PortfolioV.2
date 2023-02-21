@@ -7,3 +7,6 @@
 [submodule "dev/PortfolioV.1"]
 	path = dev/PortfolioV.1
 	url = https://github.com/Enzo-Qlns/PortfolioV.1.git
+[submodule "dev/MyGes-mark-calculator"]
+	path = dev/MyGes-mark-calculator
+	url = https://github.com/Enzo-Qlns/MyGes-mark-calculator.git
