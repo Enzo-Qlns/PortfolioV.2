@@ -4,22 +4,24 @@ const skills = document.getElementById("skills");
 const mark = document.getElementById('mark');
 const place = document.getElementById("place");
 
-if (!isMobileDevice()) {
+if (!isMobileDevice()) 
+{
   place.style.cursor = "pointer";
   place.style.textDecoration = "underline darkgrey"
 
-  $(place).click(function () {
+  place.addEventListener('click', () =>
+  {
     ifram.style.display = "block";
     mark.style.display = "block";
     blockAbout.style.display = "none";
     skills.style.visibility = "hidden";
   });
 
-  $(mark).click(function () {
+  mark.addEventListener('click', () =>
+  {
     ifram.style.display = "none"
     mark.style.display = 'none'
     blockAbout.style.display = "block";
     skills.style.visibility = "visible";
   });
-
-}
+};
