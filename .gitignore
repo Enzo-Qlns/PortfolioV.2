@@ -2,3 +2,4 @@ dev
 .vscode
 assets/static/js/game.js
 cours
+.DS_Store
