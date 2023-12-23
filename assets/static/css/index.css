@@ -84,7 +84,15 @@ iframe {
     animation: progress 5s;
 }
 
+.container p {
+    overflow: auto;
+}
+
 @media only screen and (max-width: 768px) {
+    .img-container img {
+        display: none;
+    }
+
     #mark {
         right: 39%;
         top: 18%;
