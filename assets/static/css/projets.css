@@ -7,11 +7,14 @@
     margin: 3vh;
 }
 
-.rounded-xl.md\:w-1\/4.tic {
-    filter: grayscale(1) invert(1);
+.rounded-xl.md\:w-1\/4.img {
     width: 6rem;
-    margin: auto;
+    margin: auto 0;
     height: 6rem;
+}
+
+.grey-scale {
+    filter: grayscale(1) invert(1);
 }
 
 .rounded-xl.md\:w-1\/4.port {
