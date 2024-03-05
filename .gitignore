@@ -1,12 +1,2 @@
-dev
-cours
-
 assets/static/js/game.js
-
-
 .DS_Store
-assets/.DS_Store
-assets/static/.DS_Store
-assets/static/images/.DS_Store
-assets/static/js/.DS_Store
-pages/403/.DS_Store
