@@ -1,7 +1,7 @@
 #!/bin/bash
 
-docker rm --force portfolio
+docker rm --force apache-portfolio
 
-docker build -t portfolio:latest .
-docker run -d --name portfolio --network portfolio-network portfolio:latest
+docker build -t apache-portfolio:latest .
+docker run -d --name apache-portfolio --network portfolio-network apache-portfolio:latest
 docker ps
